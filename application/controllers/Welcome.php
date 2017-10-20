@@ -30,11 +30,11 @@ class Welcome extends CI_Controller {
 $name = $this->input->post('nombre');
 $lastname = $this->input->post('apellido');
 $correo = $this->input->post('correo');
-echo "nombre:".$name."apellido:".$lastname."correo:".$"email";
+echo "nombre:".$name."apellido:".$lastname."correo:".$email;
 
 		
 	
-$data = array('nombre' => $this->input->post('nombre' ),'apellido' => $this->input->post('apellido')"correo"=>$this=>input->post("correo"));
+$data = array('nombre' => $this->input->post('nombre'),'apellido' => $this->input->post('apellido'),'correo'=>$this=>input->post('correo'));
 		
 		$this->form_model->guardar($data);
 	}
